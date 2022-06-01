@@ -1,7 +1,7 @@
-import type { NextPage } from 'next';
+import { Text } from '@chakra-ui/react';
 
-const Home: NextPage = () => {
-  return <h1>home</h1>;
+const Home = () => {
+  return <Text color="yellow.400">Hello</Text>;
 };
 
 export default Home;
