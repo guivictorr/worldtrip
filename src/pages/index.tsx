@@ -1,7 +1,8 @@
-import { Text } from '@chakra-ui/react';
+import { Center, Flex, Text, Image as ChakraImage } from '@chakra-ui/react';
+import Image from 'next/image';
 
 const Home = () => {
-  return <Text color="yellow.400">Hello</Text>;
+  return <h1>hellos</h1>;
 };
 
 export default Home;
