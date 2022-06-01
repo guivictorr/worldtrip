@@ -1,8 +1,8 @@
-import { Center, Flex, Text, Image as ChakraImage } from '@chakra-ui/react';
+import { Header } from 'components/Header';
 import Image from 'next/image';
 
 const Home = () => {
-  return <h1>hellos</h1>;
+  return <Header />;
 };
 
 export default Home;
