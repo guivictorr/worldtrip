@@ -9,9 +9,9 @@ export function List({ children }: ListProps) {
     <ChakraList
       display="flex"
       flexWrap="wrap"
-      my="8"
+      my={['8', '16', '20']}
       justifyContent="center"
-      gap="8"
+      gap={['8', '24']}
     >
       {children}
     </ChakraList>
