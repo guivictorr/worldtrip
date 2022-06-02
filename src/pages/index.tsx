@@ -1,4 +1,14 @@
-import { Box, Divider, Flex, Text, Center } from '@chakra-ui/react';
+import { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  Box,
+  Divider,
+  Flex,
+  Text,
+  Center,
+  HStack,
+  VStack,
+} from '@chakra-ui/react';
 import { Header } from 'components/Header';
 import { List } from 'components/List';
 import { ListItem } from 'components/List/ListItem';
@@ -41,6 +51,45 @@ const Home = () => {
           Vamos nessa? <br /> Então escolha seu continente
         </Text>
       </Box>
+
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        style={{ marginTop: 20 }}
+      >
+        <SwiperSlide
+          style={{
+            backgroundImage: 'url(/images/banner.png)',
+            height: 250,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <VStack color="gray.50" fontWeight={700} spacing="3">
+            <Text fontSize="x-large">Europa</Text>
+            <Text>o continente mais antigo</Text>
+          </VStack>
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage: 'url(/images/banner.png)',
+            height: 250,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <VStack color="gray.50" fontWeight={700} spacing="3">
+            <Text fontSize="x-large">America</Text>
+            <Text>o continente mais novo</Text>
+          </VStack>
+        </SwiperSlide>
+        <SwiperSlide>Helo</SwiperSlide>
+      </Swiper>
     </>
   );
 };
