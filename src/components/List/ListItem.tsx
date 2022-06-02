@@ -15,7 +15,7 @@ export function ListItem({ children }: ListItemProps) {
     <ChakraListItem>
       <Flex align="center" justify="center">
         <ListIcon as={VscCircleFilled} color="yellow.400" />
-        <Text>{children}</Text>
+        <Text fontSize="lg">{children}</Text>
       </Flex>
     </ChakraListItem>
   );

@@ -12,11 +12,11 @@ export function Banner() {
       color="gray.50"
       position="relative"
     >
-      <Text mb="2" fontWeight={500} fontSize={['sm', '4xl']}>
+      <Text mb="2" fontWeight={500} fontSize={['xl', '4xl']}>
         5 Continentes, <br />
         infinitas possibilidades.
       </Text>
-      <Text fontSize={['xs', 'xl']}>
+      <Text fontSize={['sm', 'xl']}>
         Chegou a hora de tirar do papel a viagem que <br /> você sempre sonhou.
       </Text>
       <Image
