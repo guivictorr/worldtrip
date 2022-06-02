@@ -20,10 +20,10 @@ const Home = () => {
         </List>
 
         <Center mb="6">
-          <Divider w="20" bg="gray.500" h="1px" />
+          <Divider w="20" bg="gray.500" h={['1px', '2px']} />
         </Center>
 
-        <Text textAlign="center">
+        <Text textAlign="center" fontWeight={500} fontSize={['xl', '4xl']}>
           Vamos nessa? <br /> Então escolha seu continente
         </Text>
       </Box>

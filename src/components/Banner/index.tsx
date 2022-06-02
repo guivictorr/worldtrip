@@ -12,7 +12,7 @@ export function Banner() {
       color="gray.50"
       position="relative"
     >
-      <Text mb="2" fontWeight={500} fontSize={['md', '4xl']}>
+      <Text mb="2" fontWeight={500} fontSize={['sm', '4xl']}>
         5 Continentes, <br />
         infinitas possibilidades.
       </Text>
