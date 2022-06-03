@@ -31,20 +31,22 @@ const Home = () => {
         </Text>
       </Box>
 
-      <Swiper
-        slides={[
-          {
-            title: 'Europa',
-            subtitle: 'o mais antigo',
-            image: '/images/banner.png',
-          },
-          {
-            title: 'America',
-            subtitle: 'o mais antigo',
-            image: '/images/banner.png',
-          },
-        ]}
-      />
+      <Box px={['0', '0', '100']} mb={['6', '10']}>
+        <Swiper
+          slides={[
+            {
+              title: 'Europa',
+              subtitle: 'o mais antigo',
+              image: '/images/banner.png',
+            },
+            {
+              title: 'America',
+              subtitle: 'o mais antigo',
+              image: '/images/banner.png',
+            },
+          ]}
+        />
+      </Box>
     </>
   );
 };
