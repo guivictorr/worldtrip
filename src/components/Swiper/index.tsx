@@ -1,6 +1,7 @@
 import { Navigation, Pagination } from 'swiper';
 import { Swiper as SwiperReact, SwiperSlide } from 'swiper/react';
 import { VStack, Text, useBreakpointValue } from '@chakra-ui/react';
+import Link from 'next/link';
 
 type SwiperProps = {
   slides: {
@@ -36,10 +37,12 @@ export function Swiper({ slides }: SwiperProps) {
             alignItems: 'center',
           }}
         >
-          <VStack color="gray.50" fontWeight={700} spacing="3">
-            <Text fontSize={['2xl', '5xl']}>{slide.title}</Text>
-            <Text fontSize={['sm', '2xl']}>{slide.subtitle}</Text>
-          </VStack>
+          <Link href="/continent/europa" passHref>
+            <VStack color="gray.50" fontWeight={700} spacing="3">
+              <Text fontSize={['2xl', '5xl']}>{slide.title}</Text>
+              <Text fontSize={['sm', '2xl']}>{slide.subtitle}</Text>
+            </VStack>
+          </Link>
         </SwiperSlide>
       ))}
     </SwiperReact>
