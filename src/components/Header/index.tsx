@@ -1,11 +1,4 @@
-import {
-  Center,
-  Flex,
-  HStack,
-  Icon,
-  IconButton,
-  useBreakpointValue,
-} from '@chakra-ui/react';
+import { Center, Icon, IconButton, useBreakpointValue } from '@chakra-ui/react';
 import { IoIosArrowBack } from 'react-icons/io';
 import Image from 'next/image';
 import Link from 'next/link';
